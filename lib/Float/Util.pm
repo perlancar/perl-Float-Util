@@ -54,4 +54,10 @@ point number.
 
 =head1 SEE ALSO
 
+L<https://en.wikipedia.org/wiki/Double-precision_floating-point_format>
+
+L<https://en.wikipedia.org/wiki/Quadruple-precision_floating-point_format>
+
+L<https://stackoverflow.com/questions/21146203/checking-if-floating-point-number-is-completely-convertibal-to-binary>
+
 =cut
