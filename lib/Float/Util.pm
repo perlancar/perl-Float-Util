@@ -11,7 +11,10 @@ use Config;
 use Exporter qw(import);
 our @EXPORT_OK = qw(is_exact);
 
-my $numsigfdigs = ($Config{usequadmath} ? 36 : 17)+1;
+my $numsigfdigs = (
+    $Config{nvsize} == 16 ? 36 :
+        $Config{nvsize} == 8 ? 17 :
+        die "Can't handle nvsize=$Config{nvsize}")+1;
 my $fmt = "%.${numsigfdigs}f";
 
 sub is_exact {
